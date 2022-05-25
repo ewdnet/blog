@@ -12,6 +12,7 @@ const Signup = () => {
     try {
       const data = { name: name, email: email, password: password }
       await register(data)
+      window.location.href = '/login'
     } catch (error) {
       console.log(error)
     }

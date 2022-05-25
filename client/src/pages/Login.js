@@ -24,9 +24,7 @@ const Login = () => {
   return (
     <main className="uk-flex-auto uk-section uk-flex uk-flex-row uk-flex-center">
       <article className="uk-container uk-container-small">
-        <h1>
-          Login <span onClick={() => localStorage.removeItem('token')}>clear</span>
-        </h1>
+        <h1>Login</h1>
         <form onSubmit={handleSubmit} className="uk-form-stacked" action="/login" method="post">
           <div className="uk-margin">
             <label className="uk-form-label" htmlFor="email">

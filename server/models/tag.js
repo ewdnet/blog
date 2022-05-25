@@ -15,10 +15,10 @@ const TagSchema = new Schema({
   },
 })
 
-TagSchema.pre('find', function (next) {
-  this.populate('articles')
-  next()
-})
+// TagSchema.pre('find', function (next) {
+//   this.populate('articles')
+//   next()
+// })
 
 const Tag = mongoose.model('Tag', TagSchema)
 export default Tag

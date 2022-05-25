@@ -34,10 +34,10 @@ const ArticleSchema = new Schema({
   ],
 })
 
-ArticleSchema.pre('find', function (next) {
-  this.populate('tags').populate('comments')
-  next()
-})
+// ArticleSchema.pre('find', function (next) {
+//   this.populate('tags').populate('comments')
+//   next()
+// })
 
 const Article = mongoose.model('Article', ArticleSchema)
 export default Article

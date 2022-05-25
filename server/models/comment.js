@@ -2,6 +2,10 @@ import mongoose from 'mongoose'
 const { Schema } = mongoose
 
 const CommentSchema = new Schema({
+  article: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Article',
+  },
   author: String,
   content: {
     type: String,
@@ -12,16 +16,12 @@ const CommentSchema = new Schema({
     type: Date,
     default: Date.now(),
   },
-  article: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Article',
-  },
 })
 
-CommentSchema.pre('find', function (next) {
-  this.populate('article')
-  next()
-})
+// CommentSchema.pre('find', function (next) {
+//   this.populate('article')
+//   next()
+// })
 
 const Comment = mongoose.model('Comment', CommentSchema)
 export default Comment

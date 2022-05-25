@@ -20,7 +20,7 @@ export const postArticle = async (req, res) => {
 
 export const getArticles = async (req, res) => {
   try {
-    const articles = await Article.find({})
+    const articles = await Article.find({}).populate('tags')
     await res.json(articles)
   } catch (error) {
     res.status(500).send('Error getting articles')
@@ -30,7 +30,7 @@ export const getArticles = async (req, res) => {
 export const getArticleById = async (req, res) => {
   try {
     const { id } = req.params
-    const article = await Article.findById(id)
+    const article = await Article.findById(id).populate('tags').populate('comments')
     await res.json(article)
   } catch (error) {
     res.status(500).send('Error getting article')

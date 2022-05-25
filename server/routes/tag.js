@@ -1,5 +1,5 @@
 import express from 'express'
-import { getTags, postTag } from '../controllers/tag.js'
+import { postTag, getTags, getTagById } from '../controllers/tag.js'
 
 const { Router } = express
 
@@ -7,5 +7,6 @@ const router = Router()
 
 router.post('/tag', postTag)
 router.get('/tags', getTags)
+router.get('/tag/:id', getTagById)
 
 export default router
