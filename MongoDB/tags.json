@@ -1,0 +1,30 @@
+[
+  {
+    "_id": {
+      "$oid": "628cf7c464202b54004a6cd8"
+    },
+    "articles": ["62763c0518c78a7b0472ee4b", "6288e50b15007c3cff408040"],
+    "name": "Chcolate"
+  },
+  {
+    "_id": {
+      "$oid": "628cf87164202b54004a6cd9"
+    },
+    "articles": [],
+    "name": "Creamy-Cheese"
+  },
+  {
+    "_id": {
+      "$oid": "628cf90e64202b54004a6cda"
+    },
+    "articles": ["62763c0518c78a7b0472ee4b"],
+    "name": "Dessert"
+  },
+  {
+    "_id": {
+      "$oid": "628cf94464202b54004a6cdb"
+    },
+    "articles": [],
+    "name": "Healthy-BreakFast"
+  }
+]

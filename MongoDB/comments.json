@@ -1,0 +1,18 @@
+[
+  {
+    "_id": {
+      "$oid": "628d3ef50ce2a9d483c0172a"
+    },
+    "article": "62763c0518c78a7b0472ee4b",
+    "author": "One",
+    "content": "The first Comment ..."
+  },
+  {
+    "_id": {
+      "$oid": "628d41100ce2a9d483c0172b"
+    },
+    "article": "62763c0518c78a7b0472ee4b",
+    "author": "Test",
+    "content": "The second Comment ..."
+  }
+]
